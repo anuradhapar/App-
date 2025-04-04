@@ -1,18 +1,78 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!system/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lifestyle App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #2d2dff; color: white; padding: 40px; text-align: center; }
+    .content, .testimonials, .pricing, .contact, footer { padding: 40px 20px; text-align: center; }
+    .btn { background: #2d2dff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; display: inline-block; margin-top: 10px; }
+    .card { background: white; margin: 20px auto; padding: 20px; border-radius: 10px; max-width: 500px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    form input, form textarea { width: 90%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    form button { padding: 10px 20px; background: #2d2dff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background: #222; color: white; }
+  </style>
+</head>
+<body>
 
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
+  <!-- Hero -->
+  <header>
+    <h1>Lifestyle</h1>
+    <p>The best app to improve your daily habits and wellness</p>
+    <a class="btn" href="#">Download Now</a>
+  </header>
 
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-/vendor/
+  <!-- Features -->
+  <div class="content">
+    <h2>Features</h2>
+    <p>Healthy Tips | Daily Tracker | Mindfulness Tools</p>
+    <img src="your-app-screenshot.png" alt="App Screenshot" width="300">
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="card">
+      <p>"This app changed my lifestyle completely! Highly recommended."</p>
+      <strong>- Anjali, Jaipur</strong>
+    </div>
+    <div class="card">
+      <p>"Simple, useful, and inspiring. I use it daily!"</p>
+      <strong>- Raj, Mumbai</strong>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing">
+    <h2>Pricing</h2>
+    <div class="card">
+      <h3>Free Plan</h3>
+      <p>Access basic features</p>
+    </div>
+    <div class="card">
+      <h3>Premium - ₹199/month</h3>
+      <p>Unlock all features, no ads, priority support</p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="4" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lifestyle App. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
